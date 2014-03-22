@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+ 
+  <node pkg="aiciss_logger" type="aiciss_logger" name="aiciss_logger" output="screen" >
+    <remap from="~joint_states" to="/joint_states" />
+    <remap from="~odom" to="/odom" />
+    <remap from="~cmd_vel" to="/cmd_vel" />
+  </node>
+ 
+</launch>

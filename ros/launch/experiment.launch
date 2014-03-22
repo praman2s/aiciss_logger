@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- localization component for "ground truth" data -->
+  <include file="$(find mir_2dnav)/ros/launch/amcl.launch"/>
+
+  <!-- component to move base relative around -->
+  <include file="$(find mcr_relative_base_controller)/ros/launch/relative_base_controller.launch"/>
+
+  <!-- logger component -->
+  <include file="$(find aiciss_logger)/ros/launch/logger.launch"/>
+
+
+ 
+</launch>
